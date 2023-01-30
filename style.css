@@ -164,4 +164,44 @@ a{
    
 }
 
+.hero-section-right{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.userimage{
+    padding: 2.5rem;
+    filter: grayscale(1);
+    transition: all 1s;
+    animation: scaleImage 5s Linear infinite;
+}
+
+.userimage img{
+    z-index: -9;
+}
+
+@keyframes scaleImage {
+
+    0%{
+        filter: grayscale(0);
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1);
+        filter: grayscale(1);
+       
+    }
+
+    100%{
+        transform: scale(1);
+        filter: grayscale(0);
+        box-shadow: 3px 3px 10px black;
+    }
+    
+}
+
 
